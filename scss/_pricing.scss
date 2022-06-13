@@ -1,0 +1,88 @@
+//* ​‌‌‍𝗣𝗿𝗶𝗰𝗶𝗻𝗴-𝗚𝗹𝗼𝗯𝗮𝗹 ​
+.pricing{
+    font-family: 'Open Sans', sans-serif;
+    background: #5b2072; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #5b2072 0%, #5d1566 50%, #251a41 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#5b2072), color-stop(50%,#5d1566), color-stop(100%,#251a41)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #5b2072 0%,#5d1566 50%,#251a41 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #5b2072 0%,#5d1566 50%,#251a41 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #5b2072 0%,#5d1566 50%,#251a41 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  #5b2072 0%,#5d1566 50%,#251a41 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b2072', endColorstr='#251a41',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    &__content{
+        @include flex(row,wrap,center,5rem);
+    }
+    &__card{
+        @include flex(column,wrap,center,0);
+        text-align: center;
+        width: 100%;
+	    background-color: #2b2937;
+        *{
+            width: 100%;  
+        }
+        p{
+            padding: 2rem;
+        }
+        .pricing__title{
+            text-transform: uppercase;
+            height: 100%;
+	        border-radius: 5px 5px 0px 0px;
+            p{
+                font-weight: 800;
+	            font-size: 29px;
+                padding-top: 10px;
+            }
+        }
+        .primary{
+            background-color: #eac80d;
+            border-bottom: 3px solid #bfa30c;
+        }
+        .high{
+            background-color: #1abc9c;
+            border-bottom: 3px solid #18937b;
+        }
+        .uni{
+            background-color: #5d6a9a;
+            border-bottom: 3px solid #474f6f;
+        }
+        .pricing__header{
+            font-size: 80px;
+            border-bottom:1px solid #494a5a;
+            padding-bottom: 30px;
+            
+            span{
+                font-size: 36px;
+            }
+            sup{
+                font-size: 50px;
+            }
+            p{
+                color:#494a5a;
+            }
+        }
+        .pricing__body{
+            
+            p{
+                font-size: 15px;
+                color:#9095aa;
+                border-bottom: 1px  solid #494a5a;
+                line-height: 40px;
+                text-align: center;
+                padding: 1rem 0;
+                width: 100%;
+            }
+            .buy{
+                padding: 2rem 0;
+                color: #fff;
+                cursor: pointer;
+                font-size: 20px;
+                span{
+                    transition: all .3s;
+                }
+                span:hover{
+                    text-shadow: 1px 1px 20px #fff;
+                }
+            }
+        }
+    }
+}

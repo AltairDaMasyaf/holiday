@@ -1,0 +1,140 @@
+//* HERO GLOBAL
+.hero {
+  height: 100vh;
+  background-image: url("../images/hero-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  line-height: 1.6;
+  border-bottom: 2px solid white;
+  position: relative;
+  &__content {
+    @include flex(row, nowrap, center, 0);
+    width: 100%;
+  }
+  &__info {
+    @include flex(column, wrap, flex-start, 1rem);
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 2rem;
+    .hero__heading {
+      letter-spacing: 5px;
+      font-weight: 400;
+    }
+  }
+  &__text {
+    @include flex(column, wrap, flex-start, 1rem);
+    align-items: flex-start;
+    margin-left: 10rem;
+  }
+}
+
+//* HERO MOBILE
+@media screen and (max-width: 768px) {
+  .hero {
+    background: none;
+    line-height: 1.2;
+    position: relative;
+    &__content {
+      text-align: center;
+      justify-self: flex-start;
+      color: $secondary-color;
+      text-shadow: 2px 2px white;
+    }
+    &__img {
+      display: none;
+    }
+    &__info {
+      align-items: center;
+      margin-top: 20%;
+    }
+    &__text {
+      align-items: center;
+      margin: 8rem 0 0;
+      gap: 3rem;
+      p {
+        font-size: 3rem;
+      }
+      button {
+        font-size: 3rem;
+      }
+    }
+    &-bg-sm {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      filter: blur(5px);
+    }
+  }
+}
+
+//* HERO TABLET
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .hero {
+    &__content {
+      position: relative;
+      height: 600px;
+      justify-content: flex-start;
+      padding-top: 0;
+      line-height: 1.2;
+      padding: 0 2rem;
+    }
+
+    &__img img {
+      position: absolute;
+      width: 50vw;
+      height: 95vh;
+      bottom: -10%;
+      right: 5%;
+    }
+    &-bg-sm {
+      display: none;
+    }
+  }
+}
+
+//* HERO DESKTOP
+@media screen and (min-width: 1200px) {
+  .hero {
+    position: relative;
+    &__content {
+      position: relative;
+      height: 600px;
+      justify-content: flex-start;
+      padding-top: 0;
+    }
+    &__empty {
+      min-width: 570px;
+    }
+    &__info {
+      width: 100%;
+
+      .hero__heading {
+        margin-top: 20rem;
+        font-size: 160px;
+      }
+    }
+    &__img img {
+      width: 50vw;
+      height: 95vh;
+      position: absolute;
+      bottom: -80px;
+      right: 10%;
+    }
+    &__text {
+      margin-top: 3rem;
+      gap: 5rem;
+      p {
+        font-size: 2.5rem;
+      }
+      button {
+        font-size: 3rem;
+      }
+    }
+    &-bg-sm {
+      display: none;
+    }
+  }
+}

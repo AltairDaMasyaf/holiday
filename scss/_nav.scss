@@ -1,0 +1,120 @@
+//* NAV GLOBAL
+
+.nav {
+  @include flex(row, wrap, space-between, 0);
+  color: white;
+  background-color: $secondary-color;
+  border-bottom: 4px solid white;
+  .logo {
+    width: 70px;
+  }
+  .nav__toggler {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.3s;
+    width: 40px;
+  }
+  &__list {
+    @include flex(row, nowrap, center, 1rem);
+  }
+  &__item {
+    list-style: none;
+  }
+  &__toggler {
+    height: 40px;
+  }
+  a {
+    color: white;
+    transition: all 0.3s;
+  }
+  a:hover {
+    color: $primary-color;
+    // text-shadow: 2px 2px white;
+  }
+}
+
+.nav-click {
+  background-color: $secondary-color;
+  border-bottom: 2px solid white;
+}
+.nav-scrolled {
+  background-color: $secondary-color;
+  border-bottom: 2px solid white;
+}
+
+//* NAV MOBILE
+
+@media screen and (max-width: 768px) {
+  .nav {
+    padding: 0 1rem;
+    * {
+      transition: all 0.3s;
+    }
+
+    &__list {
+      width: 100%;
+      flex-direction: column;
+    }
+    &__item {
+      width: 100%;
+      text-align: center;
+    }
+    a {
+      transition: all 0.3s;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+//* NAV DESKTOP
+
+@media screen and (min-width: 769px) {
+  .nav {
+    flex-wrap: nowrap;
+    width: 100%;
+    z-index: 99;
+
+    &__brand {
+      margin-left: 2rem;
+      cursor: pointer;
+      transition: all 0.4s;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+    &__toggler {
+      display: none;
+    }
+    &__list {
+      width: auto;
+      max-height: 100%;
+      opacity: 1;
+      gap: 4rem;
+      margin-right: 2rem;
+    }
+    a {
+      display: block;
+      font-size: 2rem;
+      border: none;
+      position: relative;
+    }
+    a:hover {
+      border: none;
+    }
+    a::after {
+      content: "";
+      position: absolute;
+      width: 0px;
+      border: 0;
+      height: 3px;
+      left: 50%;
+      bottom: 0;
+      background-color: $secondary-color;
+      transition: all ease-in-out 0.3s;
+    }
+    a:hover::after {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
