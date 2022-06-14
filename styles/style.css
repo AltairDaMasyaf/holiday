@@ -203,7 +203,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 7rem;
 }
 
 h3 {
@@ -220,6 +220,15 @@ p {
   font-size: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+}
 header {
   background-color: #478dff;
 }
@@ -316,9 +325,6 @@ section {
   .hero__info {
     align-items: center;
     margin-top: 20%;
-  }
-  .hero__info .hero__heading {
-    font-size: 7rem;
   }
   .hero__text {
     align-items: center;
@@ -568,12 +574,8 @@ section {
 }
 .about__header {
   text-align: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 0rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   overflow: visible;
   height: 250px;
   width: 100%;
@@ -588,9 +590,9 @@ section {
   width: 75%;
   height: auto;
   font-size: 2rem;
-  padding: 4rem 4rem;
+  padding: 4rem;
   color: #ff8700;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.85);
   border-radius: 26px;
   box-shadow: 0px 0px 0px 0px rgba(145, 192, 255, 0.5), inset 15px -15px 16px 0px rgba(145, 192, 255, 0.6), inset 0px 11px 28px 0px white;
 }
@@ -623,9 +625,16 @@ section {
   }
   .about__header {
     height: 150px;
+    grid-template-columns: repeat(3, 100px);
+    justify-content: space-between;
+    gap: 0rem;
+  }
+  .about__header img {
+    width: 100%;
   }
   .about__header .about__heading {
-    font-size: 8rem;
+    transform: translateX(-2.5rem);
+    z-index: 2;
   }
   .about-bg-sm {
     position: absolute;
@@ -635,8 +644,7 @@ section {
     z-index: -1;
   }
   .about__img {
-    width: 100px;
-    margin: 0 2rem;
+    margin-top: 3rem;
     transform: rotate(10deg);
   }
   .about .first {
@@ -644,23 +652,15 @@ section {
   }
   .about__text {
     margin-left: 0 !important;
+    padding: 4rem 1.5rem;
+    width: 90%;
   }
 }
 @media screen and (min-width: 769px) {
-  .about__heading {
-    font-size: 10rem;
-  }
   .about-bg-sm {
     display: none;
   }
-  .about .about_img_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   .about__img {
-    max-width: 180px;
-    margin: 0 10rem;
     transform: rotate(10deg);
   }
   .about .first {
