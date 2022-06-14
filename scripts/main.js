@@ -1,11 +1,10 @@
 $(document).ready(function () {
-  $(".nav__toggler").click(function () {
-    $(".collapsible").toggleClass("collapsible--expanded");
-  });
-
-  $(".nav__toggler").click(function () {
-    $("nav").toggleClass("nav-click");
-  });
+  const collapsibles = document.querySelectorAll(".collapsible");
+  collapsibles.forEach((item) =>
+    item.addEventListener("click", function () {
+      this.classList.toggle("collapsible--expanded");
+    })
+  );
 
   //   if(window.innerWidth < 769) {
   //   var targetOffset = $("#hero").offset().top;
