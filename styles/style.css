@@ -631,6 +631,7 @@ section {
   }
   .about__header img {
     width: 100%;
+    justify-self: flex-start;
   }
   .about__header .about__heading {
     transform: translateX(-3rem);
@@ -657,9 +658,24 @@ section {
     width: 90%;
   }
 }
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .about__header {
+    justify-content: center;
+    gap: 5rem;
+  }
+}
 @media screen and (min-width: 769px) {
   .about-bg-sm {
     display: none;
+  }
+  .about__header {
+    justify-content: center;
+  }
+  .about__header img {
+    max-width: 200px;
+  }
+  .about__header .first {
+    justify-self: flex-end;
   }
   .about__img {
     transform: rotate(10deg);
