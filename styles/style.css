@@ -778,6 +778,7 @@ section {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
+  border-top: 5px solid white;
 }
 .prize__header {
   padding-top: 3rem;
