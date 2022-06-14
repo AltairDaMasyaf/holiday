@@ -867,6 +867,12 @@ section {
 
 @media screen and (max-width: 768px) {
   .prize {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
     background-image: url("../images/breadcrumps-sm.webp");
   }
   .prize__text {
