@@ -662,6 +662,9 @@ section {
   }
 }
 @media screen and (min-width: 769px) {
+  .about {
+    padding-bottom: 20rem;
+  }
   .about-bg-sm {
     display: none;
   }
@@ -739,7 +742,7 @@ section {
 
 @media screen and (max-width: 768px) {
   .rm {
-    padding: 0 2rem 10rem;
+    padding: 0 2rem 20rem;
   }
   .rm__sm {
     position: absolute;
@@ -754,6 +757,9 @@ section {
   }
 }
 @media screen and (min-width: 769px) {
+  .rm {
+    padding-bottom: 20rem;
+  }
   .rm__sm {
     display: none;
   }
@@ -771,6 +777,7 @@ section {
   background-image: url("../images/breadcrumps-4x.webp");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  position: relative;
 }
 .prize__header {
   padding-top: 3rem;
@@ -832,6 +839,30 @@ section {
 }
 .prize .collapsible__content {
   color: black;
+}
+.prize .footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  border-top: 3px solid white;
+  height: 150px;
+}
+.prize .footer .social {
+  font-size: 5rem;
+  color: #ff8700;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.prize .footer .social:hover {
+  color: white;
+  transform: translateY(-1rem);
 }
 
 @media screen and (max-width: 768px) {
