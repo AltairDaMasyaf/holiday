@@ -874,6 +874,12 @@ section {
     padding: 4rem 2rem;
     width: 85%;
   }
+  .prize .footer {
+    height: 75px;
+  }
+  .prize .footer .social {
+    font-size: 3rem;
+  }
 }
 .go-up {
   position: fixed;
