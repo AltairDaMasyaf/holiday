@@ -1,0 +1,32 @@
+@import "config";
+@import "initial";
+@import "hero";
+@import "buttons";
+@import "nav";
+@import "about";
+@import "roadmap";
+@import "prizes";
+@import "footer";
+
+//* Miscelenious
+
+.go-up {
+  position: fixed;
+  top: 45%;
+  right: 1rem;
+  font-size: 3rem;
+  color: white;
+  z-index: 999;
+  cursor: pointer;
+}
+.go-down {
+  position: fixed;
+  top: 55%;
+  right: 1rem;
+  font-size: 3rem;
+  color: white;
+  z-index: 999;
+  cursor: pointer;
+}
+
+//* OVERWRITE TO FIX
