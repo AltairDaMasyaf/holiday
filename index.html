@@ -53,9 +53,10 @@
       </svg>
       <ul class="nav__list collapsible__content">
         <li class="nav__item"><a href="#about">About</a></li>
-        <li class="nav__item"><a href="">RoadMap</a></li>
-        <li class="nav__item"><a href="">Tokenomics</a></li>
-        <li class="nav__item"><a href="">Contact</a></li>
+        <li class="nav__item"><a href="#roadmap">RoadMap</a></li>
+        <li class="nav__item"><a href="#token">Tokenomics</a></li>
+        <li class="nav__item"><a href="#prize">Prize</a></li>
+        <li class="nav__item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
@@ -63,7 +64,7 @@
 
     <section id="hero" class="hero">
       <div class="hero__content">
-        <div class="hero__info" data-aos="fade-right" data-aos-duration="1000">
+        <div class="hero__info">
           <h1 class="hero__heading">Ready To Holiday?</h1>
           <div class="hero__text">
             <p>Get Ready To Best Holiday Ever!..</p>
@@ -124,7 +125,7 @@
 
     <!-- RoadMap -->
 
-    <section class="rm">
+    <section id="roadmap" class="rm">
       <div class="container rm__content">
         <img class="rm__lg" src="./images/rm-bg.webp" alt="" />
         <img class="rm__sm" src="./images/rm-sm.webp" alt="" />
@@ -189,9 +190,23 @@
         </div>
       </div>
     </section>
-
+    <!-- Tokenomics -->
+    <section id="token" class="tokenomics">
+      <div class="tokenomics__content">
+        <div class="tokenomics__text">
+          <h3 class="text__heading">Are You Ready To Vacation?</h3>
+          <ul class="token__list">
+            <br />
+            <li class="token__list__item">3% Liquidity Pool</li>
+            <li class="token__list__item">6% Marketing & Dev Wallet</li>
+            <li class="token__list__item">1% Holiday</li>
+            <li class="token__list__item">2% Max Wallet</li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <!-- Prize -->
-    <section class="prize">
+    <section id="prize" class="prize">
       <div class="container prize__content">
         <div class="prize__header" data-aos="fade-up" data-aos-duration="2000">
           <h1 class="prize__heading">Prizes</h1>
@@ -251,13 +266,16 @@
           </div>
         </div>
       </div>
-      <div class="footer">
-        <i class="social fa-brands fa-telegram"></i>
-        <i class="social fa-brands fa-facebook"></i>
-        <i class="social fa-brands fa-twitter"></i>
-      </div>
     </section>
+
     <!-- Footer -->
+    <section id="contact" class="footer">
+      <a href="http://www.telegram.com/@holidaytoken">
+        <i class="social fa-brands fa-telegram"></i>
+      </a>
+      <a href=""><i class="social fa-brands fa-facebook"></i></a>
+      <a href=""><i class="social fa-brands fa-twitter"></i></a>
+    </section>
 
     <script src="scripts/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
