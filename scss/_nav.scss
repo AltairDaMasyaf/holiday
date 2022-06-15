@@ -5,6 +5,8 @@
   color: white;
   background-color: $secondary-color;
   border-bottom: 4px solid white;
+  position: relative;
+  z-index: 5;
   .logo {
     width: 70px;
   }
