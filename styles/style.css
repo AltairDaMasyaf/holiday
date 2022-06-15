@@ -773,7 +773,13 @@ section {
   }
 }
 .prize {
-  min-height: 120vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40rem;
+  min-height: 150vh;
   background-image: url("../images/breadcrumps-4x.webp");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -854,6 +860,8 @@ section {
   gap: 3rem;
   border-top: 3px solid white;
   height: 150px;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
 }
 .prize .footer .social {
   font-size: 5rem;
@@ -874,6 +882,7 @@ section {
     justify-content: space-between;
     align-items: center;
     gap: 10rem;
+    min-height: 100vh;
     background-image: url("../images/breadcrumps-sm.webp");
   }
   .prize__text {
@@ -884,6 +893,7 @@ section {
   }
   .prize .footer {
     height: 75px;
+    padding-bottom: 8rem;
   }
   .prize .footer .social {
     font-size: 3rem;
